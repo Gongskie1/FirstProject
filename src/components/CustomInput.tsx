@@ -1,8 +1,16 @@
 import React from 'react'
+import { CustomInputStyles } from '../types'
 
-const CustomInput = () => {
+const CustomInput = ({inputStyles, inputType, inputName, placeholder}:CustomInputStyles) => {
   return (
-    <div>CustomInput</div>
+    <div>
+      <input 
+      type={inputType || "text"}
+      className={`${inputStyles}`}
+      name={inputName}
+      placeholder={placeholder}
+       />
+    </div>
   )
 }
 
