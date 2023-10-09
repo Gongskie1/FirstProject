@@ -6,5 +6,12 @@ export interface CustomInputStyles {
 }
 
 export interface CustomButtonStyles {
+  buttonName?:string;
+  buttonType?:"button" | "submit";
+  buttonText:string;
+  buttonStyles:string;
+}
 
+export interface CustomModalStyles  {
+  modalStyles:string
 }

@@ -1,8 +1,17 @@
 import React from 'react'
+import { CustomButtonStyles } from '../types'
 
-const CustomButton = () => {
+const CustomButton = ({buttonName, buttonType, buttonText, buttonStyles} : CustomButtonStyles) => {
   return (
-    <div>CustomButton</div>
+    <div>
+      <button 
+      className={buttonStyles}
+      type={buttonType||"button"}
+      name={buttonName}
+      >
+        
+        {buttonText}</button>
+    </div>
   )
 }
 
